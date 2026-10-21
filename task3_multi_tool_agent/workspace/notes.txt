@@ -1,0 +1,5 @@
+Project Notes
+- Launch date: 15 December
+- Budget: 250000 INR
+- Team size: 6 members
+- Goal: build an AI agent that uses multiple tools

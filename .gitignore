@@ -1,0 +1,12 @@
+# secrets
+.env
+# python
+__pycache__/
+*.pyc
+venv/
+.venv/
+.pytest_cache/
+# local data
+chroma_db/
+task1_json_extractor/output/
+.DS_Store

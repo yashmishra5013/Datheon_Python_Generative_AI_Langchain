@@ -1,0 +1,39 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Task 1 - JSON Extractor (demo)",
+      "type": "debugpy", "request": "launch",
+      "program": "${workspaceFolder}/task1_json_extractor/extract.py",
+      "args": ["--demo"],
+      "cwd": "${workspaceFolder}", "console": "integratedTerminal"
+    },
+    {
+      "name": "Task 2 - RAG: ingest sample data",
+      "type": "debugpy", "request": "launch",
+      "program": "${workspaceFolder}/task2_rag_qa/rag_qa.py",
+      "args": ["ingest"],
+      "cwd": "${workspaceFolder}", "console": "integratedTerminal"
+    },
+    {
+      "name": "Task 2 - RAG: chat",
+      "type": "debugpy", "request": "launch",
+      "program": "${workspaceFolder}/task2_rag_qa/rag_qa.py",
+      "args": ["chat"],
+      "cwd": "${workspaceFolder}", "console": "integratedTerminal"
+    },
+    {
+      "name": "Task 3 - Multi-Tool Agent",
+      "type": "debugpy", "request": "launch",
+      "program": "${workspaceFolder}/task3_multi_tool_agent/agent.py",
+      "cwd": "${workspaceFolder}", "console": "integratedTerminal"
+    },
+    {
+      "name": "Task 4 - Streamlit Chatbot",
+      "type": "debugpy", "request": "launch",
+      "module": "streamlit",
+      "args": ["run", "${workspaceFolder}/task4_streamlit_chatbot/app.py"],
+      "cwd": "${workspaceFolder}", "console": "integratedTerminal"
+    }
+  ]
+}

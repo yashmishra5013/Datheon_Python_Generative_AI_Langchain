@@ -1,0 +1,27 @@
+TAX INVOICE
+Invoice No: DS/2025/0147
+Invoice Date: 14 March 2025
+Due Date: 13 April 2025
+
+Billed By:
+Aarav Digital Services LLP
+21, Tech Park Road, Jaipur, Rajasthan 302001
+Email: accounts@aaravdigital.example
+GSTIN: 08AAAFA1234B1ZK
+
+Billed To:
+Shree Handicrafts Pvt. Ltd.
+Plot 9, Industrial Area, Alwar, Rajasthan 301001
+Email: finance@shreehandicrafts.example
+
+Description                      Qty   Rate (INR)   Amount (INR)
+Website redesign (5 pages)         1    45,000.00     45,000.00
+SEO optimisation - monthly         3     8,000.00     24,000.00
+Hosting & maintenance (annual)     1    12,000.00     12,000.00
+
+Subtotal:        81,000.00
+Discount:         3,000.00
+GST @ 18%:       14,040.00
+Grand Total:     92,040.00
+
+Payment: Bank transfer within 30 days. Thank you for your business!

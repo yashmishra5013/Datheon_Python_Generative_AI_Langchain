@@ -1,0 +1,25 @@
+GENERATIVE AI HANDBOOK - A SHORT PRACTICAL GUIDE
+
+1. Large Language Models
+A large language model (LLM) is a neural network trained on very large text collections to predict the next token in a sequence. Because it is trained on so much text, it can summarise, translate, write code and answer questions. An LLM has a context window, which is the maximum number of tokens it can read at once. Anything outside the context window is invisible to the model. LLMs can also hallucinate, which means they produce fluent text that is not true.
+
+2. Prompt Engineering
+Prompt engineering is the practice of writing instructions that guide a model to the output you want. Good prompts are clear, give the model a role, and describe the output format. Few-shot prompting adds two or three worked examples to the prompt so the model can imitate the pattern. Setting the temperature to a low value such as 0 makes answers more deterministic, which is ideal for data extraction.
+
+3. Embeddings and Vector Databases
+An embedding is a list of numbers that represents the meaning of a piece of text. Texts with similar meaning have embeddings that are close together, usually measured with cosine similarity. A vector database such as ChromaDB or FAISS stores embeddings and quickly finds the nearest neighbours of a query embedding. This is called semantic search, and it works even when the question and the document use different words.
+
+4. Retrieval-Augmented Generation (RAG)
+RAG combines search with generation. First, documents are split into chunks and each chunk is embedded and stored in a vector database. When a user asks a question, the system embeds the question, retrieves the top-k most similar chunks, and places them in the prompt as context. The LLM then answers using only that context. RAG reduces hallucinations, lets the model use private or recent data, and allows the answer to cite its sources, without retraining the model.
+
+5. Chunking Strategy
+Chunking decides how a document is split. Chunks that are too large dilute the meaning and waste context window space. Chunks that are too small lose surrounding information. A common starting point is 1000 characters per chunk with an overlap of 100 to 200 characters. Chunk overlap repeats the end of one chunk at the start of the next, so a sentence that falls on a boundary is not cut off from its context. The recursive character text splitter tries to split on paragraphs first, then lines, then sentences, and finally words, which keeps related text together.
+
+6. AI Agents
+An AI agent is an LLM that can decide which tool to use. A popular pattern is ReAct, short for Reason and Act. The agent writes a Thought, chooses an Action with an input, receives an Observation from the tool, and repeats this loop until it can give a Final Answer. Typical tools are web search, a calculator and a file reader. Agents need guardrails such as a maximum number of iterations and restricted file access.
+
+7. Structured Output
+Many applications need JSON rather than free text. To get reliable JSON, define a schema with Pydantic, put the schema and a few examples in the prompt, and validate every response. If validation fails, the error message can be sent back to the model so it can repair its answer. This is called a self-repair loop.
+
+8. Evaluation and Safety
+Always test an AI system on realistic examples. For RAG, check whether the retrieved chunks actually contain the answer and whether the final answer cites them. Never put API keys in source code; keep them in environment variables and add the .env file to .gitignore.

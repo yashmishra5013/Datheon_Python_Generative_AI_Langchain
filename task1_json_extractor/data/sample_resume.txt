@@ -1,0 +1,26 @@
+PRIYA VERMA
+Email: priya.verma@example.com | Phone: +91 91234 56789
+Jaipur, Rajasthan, India
+
+PROFESSIONAL SUMMARY
+Data-driven software engineer with 3+ years of experience building ML-powered web applications.
+
+EXPERIENCE
+Machine Learning Engineer - InsightAI Technologies, Jaipur
+March 2023 - Present
+* Built a document classification service that processes 50,000 files per month
+* Reduced model inference latency by 35% through batching and caching
+
+Junior Python Developer - PixelWorks Software, Jaipur
+July 2021 - February 2023
+* Developed internal dashboards using Flask and PostgreSQL
+* Automated weekly reporting, saving the team 10 hours per week
+
+EDUCATION
+B.Tech, Computer Science and Engineering - Malaviya National Institute of Technology, Jaipur (2021)
+
+TECHNICAL SKILLS
+Python, SQL, scikit-learn, PyTorch, Flask, Docker, Git, LangChain
+
+CERTIFICATIONS
+Google Data Analytics Certificate; Deep Learning Specialization (Coursera)
