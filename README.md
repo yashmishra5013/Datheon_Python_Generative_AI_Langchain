@@ -9,7 +9,7 @@ Every project works with **Groq, Google Gemini or OpenAI** — switch with one l
 |---|---------|--------------|----------|
 | 1 | [Structured LLM Prompt Pipeline & JSON Extractor](task1_json_extractor) | Turns invoices / resumes into **strictly validated JSON** | Parameterised prompts, few-shot, Pydantic, self-repair loop |
 | 2 | [Document Q&A with RAG](task2_rag_qa) | Answers questions on your PDFs / text files **with cited sources** | Recursive chunking, embeddings, ChromaDB |
-| 3 | [Multi-Tool Autonomous Agent](task3_multi_tool_agent) | Decides by itself when to search the web, calculate or read files | LangChain ReAct, DuckDuckGo / Tavily |
+| 3 | [Multi-Tool Autonomous Agent](task3_multi_tool_agent) | Decides by itself when to search the web, calculate or read files | LangChain tool-calling agent, DuckDuckGo / Tavily |
 | 4 | [Streamlit AI Chatbot](task4_streamlit_chatbot) | Web chat UI with **streaming**, memory and document mode | Streamlit, session state, reuses Task 2 |
 
 ## Repository structure
@@ -75,7 +75,7 @@ python task2_rag_qa/rag_qa.py chat                         # interactive with fo
 ```
 
 ## Task 3 – Multi-Tool Autonomous AI Agent
-A **ReAct** agent with three tools and a console trace of its reasoning:
+A **function-calling (tool-calling) agent** with three tools. Every tool call carries a short 
 
 | Tool | Purpose | Safety |
 |------|---------|--------|
